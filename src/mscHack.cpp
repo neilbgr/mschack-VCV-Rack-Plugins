@@ -6,6 +6,7 @@ __attribute__((__visibility__("default"))) void init(rack::Plugin *p)
 {
     thePlugin = p;
 
+#ifndef CARDINAL_MINI_TRIM_INIT
     /*
     p->addModel( modelSeq_3x16x16 );
     p->addModel( modelXFade );
@@ -36,6 +37,7 @@ __attribute__((__visibility__("default"))) void init(rack::Plugin *p)
     p->addModel(modelAlienz);
     p->addModel(modelOSC_WaveMorph_3);
     p->addModel(modelMaude_221);
+#endif
 }
 
 //-----------------------------------------------------
